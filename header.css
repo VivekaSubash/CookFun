@@ -20,6 +20,7 @@
     row-gap: 20px;
     column-gap: 10px;
     position: relative;
+    font-size: 15px;
 }
 .nav-links .dropdown {
     display: none;
@@ -48,4 +49,6 @@
 .search-bar{
     padding: 10px 10px 10px 10px;
     flex: 1;
+    font-size: 15px;
+
 }
