@@ -11,25 +11,33 @@
 .contentone{
   margin-top: 80px;
 }
-.contenttwo{
-  margin-top: 50px;
-  margin-left: 40px;
-  margin-right: 300px;
-  border:1px solid black;
-  padding:5px 5px 5px 5px;
-  padding-left: 55px;
+.contenttwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers children horizontally */
+  border: 1px solid black;
+  padding: 20px;
+  margin: 60px auto 0 auto; /* centers the box itself */
+  max-width: 600px; /* optional: limits how wide it can grow */
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
 }
-.contenttwo .para{
-  margin: 0;
-  padding: 0;
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-.popularlinks{
-  margin-left: 10px;
-  column-gap: 30px;
-  margin-top: 5px;
 
+.contenttwo .para {
+  margin: 0;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  font-size: 20px;
+  text-align: center; /* ensures centered text */
+}
+
+.popularlinks {
+  display: flex;
+  gap: 30px; /* replaces column-gap for flexibility */
+  margin-top: 10px;
+  justify-content: center; /* centers links inside flex row */
+  flex-wrap: wrap; /* prevents overflow on small screens */
 }
 
 .contenttwo a{
@@ -39,33 +47,15 @@
 }
 
 @media screen and (max-width: 426px) {
-  .contentone{
+  .middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  .contenttwo {
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 30px;
-    border:1px solid black;
-    padding:8px 8px 8px 8px;
-    padding-left: 35px;
-    align-items: center;
-    justify-content: center;
-  }
-  .contenttwo .para{
-    margin: 0;
-    padding: 0;
-    padding-bottom: 5px;
-    font-size: 10px;
-    white-space: nowrap;
-  }
-  .popularlinks a{
-    font-size: 8px;
-  }
-  .popularlinks{
-    margin-left: 30px;
-  
-  }
-  .chicken{
-    margin-left: -50px;
+}
+
+@media screen and (min-width: 427px) and (max-width: 1921px){
+  .middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
