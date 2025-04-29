@@ -41,22 +41,38 @@
 }
 
 @media (max-width: 768px) {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      min-height: 0;
+    }
+  
     .middle {
-        display: flex;
-        flex-direction: column; /* Stack content and image vertically */
-        width: 100vw; /* Full viewport width */
-        min-height: 100vh; /* Full viewport height if you want */
-        align-items: center; /* Center children horizontally */
-        padding: 20px; /* optional: for breathing space */
-        box-sizing: border-box; /* important to include padding inside width */
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: auto;
+      min-height: auto;
+      padding: 20px;
+      box-sizing: border-box;
     }
-
+  
     .content, .imgs {
-        width: 100%; /* each child also full width */
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
-
+  
     .float-image {
-        width: 100%; /* make sure image stretches too */
-        height: auto; /* maintain aspect ratio */
+      width: 100%;
+      height: auto;
     }
-}
+  
+    .footer {
+      margin-top: 0;
+      padding: 10px;
+    }
+  }
+  
+
