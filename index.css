@@ -36,3 +36,74 @@
     margin-bottom: 8px;
 
 }
+
+
+@media (max-width: 768px) {
+    
+    /* Make header taller */
+    .heads {
+        height: 50px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Make nav links bigger */
+    .nav-links {
+        width: auto;
+        font-size: 14px;
+        column-gap: 15px;
+    }
+
+    /* Make search bar adjust */
+    .search-bar {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Middle grid to one column */
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding-top: 60px;
+    }
+
+    /* Content section improve spacing */
+    .content {
+        padding: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .contentone h2 {
+        font-size: 24px;
+    }
+    
+    .contentone p {
+        font-size: 16px;
+    }
+
+    .contenttwo {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Image */
+    .imgs {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .float-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer - make it a bit taller and more readable */
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+        height: auto;
+    }
+}
