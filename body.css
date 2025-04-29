@@ -1,6 +1,2 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: auto; /* important */
-    min-height: 0; /* remove forced full screen */
+body{
 }
