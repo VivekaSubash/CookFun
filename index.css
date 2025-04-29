@@ -18,7 +18,7 @@
   border: 1px solid black;
   padding: 20px;
   margin: 60px auto 0 auto; /* centers the box itself */
-  max-width: 600px; /* optional: limits how wide it can grow */
+  max-width: 300px; /* optional: limits how wide it can grow */
   width: 100%;
   box-sizing: border-box;
   background-color: #fff;
@@ -37,8 +37,6 @@
   gap: 30px;
   margin-top: 10px;
   justify-content: center;
-  flex-wrap: nowrap; /* do not allow wrap */
-  overflow-x: auto;  /* allow horizontal scroll if needed */
   max-width: 100%;
   white-space: nowrap; /* keeps links on one line */
   padding-bottom: 5px; /* optional: space for scrollbar */
