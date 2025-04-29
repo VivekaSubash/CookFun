@@ -107,3 +107,48 @@
         height: auto;
     }
 }
+
+@media (max-width: 480px) {
+    .heads {
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .nav-links {
+        font-size: 12px;
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .content {
+        padding: 10px;
+        width: 95%;
+    }
+
+    .contentone h2 {
+        font-size: 20px;
+    }
+
+    .contentone p {
+        font-size: 14px;
+    }
+
+    .contenttwo {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .imgs {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
