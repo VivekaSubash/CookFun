@@ -2,29 +2,63 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 80px;
+    height: 60px;
     width: 100%;
-    background-color: pink;
+    background-color:#E0F2FE;
     position: fixed;
     top:0;
     left: 0;
+    column-gap: 40px;
+    color: #1E293B;
+}
+.logo{
+    width: 50%;
 }
 .nav-left{
-    width: 250px;
+    margin-left: -40px;
+    margin-right: -150px;
+
 }
 .nav-links{
     flex: 1;
-    background-color: red;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
 }
+.cuisines{
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #1E293B;
+    font-size: 15px;
+    position: relative;
+}
+.home{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #1E293B;
+    font-size: 15px;
+
+}
 .nav-links .dropdown{
     display: none;
+    position: absolute;
     background-color: rgb(230, 230, 244);
-    width: 80px;
-    margin-top: 180px;
+    margin-top: 150px;
+    width: 260px;
+    color: #1E293B;
+    max-height: 100px;   
+    column-count: 3;     /* Set your preferred max height */
+    gap: 10px;                 /* Optional spacing between items */
+    padding: 10px;
+    background-color:#F0F9FF;
+
+}
+.dropdown a{
+    color: #1E293B;
+    text-decoration: none;
+    font-size: 20px;
 
 }
 
@@ -32,5 +66,82 @@
     display: block;
 }
 .search-container{
-    width: 250px;
+   flex: 1;
+   
+    display: flex;
 }
+.search-bar{
+    flex: 1;
+    max-width: 300px;
+    min-width: 40px;
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px;
+}
+input.search-bar::placeholder{
+    font-size: 15px;
+    align-items: center;
+}
+.search{
+    width: 28px;
+    margin-left: -50px;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 321px) {
+    .nav-left{
+        margin-left: -20px;
+        margin-right: -100px;
+    }
+    .cuisines{
+        font-size: 10px;
+    }
+    .home{
+        font-size: 10px;
+    }
+    .dropdown a{
+        color: #1E293B;
+        text-decoration: none;
+        font-size: 10px;
+    
+    }
+    .nav-links .dropdown{
+        display: none;
+        position: absolute;
+        background-color: rgb(230, 230, 244);
+        margin-top: 110px;
+        width: 200px;
+        color: #1E293B;
+        max-height: 120px;   
+        column-count: 4;     /* Set your preferred max height */
+        gap: 5px;                 /* Optional spacing between items */
+        background-color:#F0F9FF;
+    
+    }
+   input.search-bar::placeholder{
+    font-size: 10px;
+   }  
+   .search-bar{
+    padding: 5px 5px 5px 5px;
+   }  
+  }
+  @media screen and (min-width: 322px) and (max-width: 426px) {
+    .nav-left {
+      margin-left: -30px;
+      margin-right: -140px;
+    }
+    .cuisines{
+        font-size: 10px;
+    }
+    .home{
+        font-size: 10px;
+    }
+    input.search-bar::placeholder{
+        font-size: 10px;
+       }
+       .search-bar{
+        padding: 5px 5px 5px 5px;
+       }
+  }
+ 
+  
