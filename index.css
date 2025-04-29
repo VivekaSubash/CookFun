@@ -39,3 +39,24 @@
     margin: 0;
 
 }
+
+@media (max-width: 768px) {
+    .middle {
+        display: flex;
+        flex-direction: column; /* Stack content and image vertically */
+        width: 100vw; /* Full viewport width */
+        min-height: 100vh; /* Full viewport height if you want */
+        align-items: center; /* Center children horizontally */
+        padding: 20px; /* optional: for breathing space */
+        box-sizing: border-box; /* important to include padding inside width */
+    }
+
+    .content, .imgs {
+        width: 100%; /* each child also full width */
+    }
+
+    .float-image {
+        width: 100%; /* make sure image stretches too */
+        height: auto; /* maintain aspect ratio */
+    }
+}
