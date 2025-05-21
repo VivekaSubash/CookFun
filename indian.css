@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    flex-direction: row;
+
+}
+.main img{
+    width: 50px;
+}
+.recipes{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.recipe-item{
+    display: flex;
+    flex-direction: column;
+}

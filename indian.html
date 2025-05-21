@@ -3,7 +3,7 @@
     <head>
         <title>Indian Recipes</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="indian.css">
     </head>
     <body>
         <nav>
@@ -13,110 +13,114 @@
             </div>
             <button class="filter-btn" onclick="toggleFilter()">Filter</button>
         </nav>
-        <div class="filter-sidebar" id="filterSidebar">
-            <div class="filter-header">
-                <h3>Filters</h3>
-                <button class="close-btn" onclick="toggleFilter()">✖</button>
+        <div class="main">
+            <div class="recipes" id="recipesList">
+                <div class="recipe-item" data-category="veg breakfast 10Mins">
+                    <img src="./foodimage/idly.png" alt="Idly">
+                    <a href="idly">Idly</a>
+                </div>
+                <div class="recipe-item" data-category="veg breakfast 10Mins">
+                    <img src="./foodimage/dosa.png" alt="Dosa">
+                    <a href="dosa">Dosa</a>
+                </div>
+                <div class="recipe-item" data-category="veg breakfast 10Mins">
+                    <img src="./foodimage/upma.jpg" alt="Upma">
+                    <a href="upma">Upma</a>
+                </div>
+                <div class="recipe-item" data-category="veg breakfast 10Mins">
+                    <img src="./foodimage/poha.jpg" alt="Poha">
+                    <a href="poha">Poha</a>
+                </div>
+                <div class="recipe-item" data-category="veg breakfast 15Mins">
+                    <img src="./foodimage/AlooParatha.jpg" alt="AlooParatha">
+                    <a href="alooParatha.html">AlooParatha</a>
+                </div>
+                <div class="recipe-item" data-category="veg lunch Morethan15Mins">
+                    <img src="./foodimage/besanchilla.jpg" alt="Besanchilla">
+                    <a href="besanchilla">Besanchilla</a>
+                </div>
+                <div class="recipe-item" data-category="nonveg lunch Morethan15Mins">
+                    <img src="./foodimage/Chicken65.jpg" alt="Chicken65">
+                    <a href="chicken65">Chicken65</a>
+                </div>
+                <div class="recipe-item" data-category="nonveg lunch Morethan15Mins">
+                    <img src="./foodimage/chickencurrey.jpg" alt="Chickencurrey">
+                    <a href="chickencurrey">Chickencurrey</a>
+                </div>
+                <div class="recipe-item" data-category="veg lunch Morethan15Mins">
+                    <img src="./foodimage/MethiThepla.jpg" alt="MethiThepla">
+                    <a href="methiThepla">MethiThepla</a>
+                </div>
+                <div class="recipe-item" data-category="veg breakfast Morethan15Mins">
+                    <img src="./foodimage/MisalPav.jpg" alt="MisalPav">
+                    <a href="misalPav">MisalPav</a>
+                </div>
+                <div class="recipe-item" data-category="nonveg lunch Morethan15Mins">
+                    <img src="./foodimage/muttoncurrey.jpg" alt="Muttoncurrey">
+                    <a href="muttoncurrey">Muttoncurrey</a>
+                </div>
+                <div class="recipe-item" data-category="veg lunch Morethan15Mins">
+                    <img src="./foodimage/onionpakora.jpg" alt="Onionpakora">
+                    <a href="onionpakora">Onionpakora</a>
+                </div>
+                <div class="recipe-item" data-category="veg lunch Morethan15Mins">
+                    <img src="./foodimage/paneerbuttermasala.jpg" alt="Paneerbuttermasala">
+                    <a href="paneerbuttermasala">Paneerbuttermasala</a>
+                </div>
+                <div class="recipe-item" data-category="veg breakfast Morethan15Mins">
+                    <img src="./foodimage/pongal.jpg" alt="Pongal">
+                    <a href="pongal">Pongal</a>
+                </div>
+                <div class="recipe-item" data-category="veg lunch Morethan15Mins">
+                    <img src="./foodimage/sambar.jpg" alt="Sambar">
+                    <a href="sambar">Sambar</a>
+                </div>
+                <div class="recipe-item" data-category="veg lunch Morethan15Mins">
+                    <img src="./foodimage/Samosa.jpg" alt="Samosa">
+                    <a href="samosa">Samosa</a>
+                </div>
+                <div class="recipe-item" data-category="veg lunch Morethan15Mins">
+                    <img src="./foodimage/TandooriPaneerTikka.jpg" alt="TandooriPaneerTikka">
+                    <a href="tandooriPaneerTikka">TandooriPaneerTikka</a>
+                </div>
             </div>
-            <div class="filter-section">
-                <label>Recipe Type:</label><br>
-                <label for="veg">Vegetarian</label>
-                <input type="checkbox" id="veg" name="veg"><br>
-                <label for="nonveg">Non-Vegetarian</label>
-                <input type="checkbox" id="nonveg" name="nonveg">
+            <div class="filter-sidebar" id="filterSidebar">
+                <div class="filter-header">
+                    <h3>Filters</h3>
+                    <button class="close-btn" onclick="toggleFilter()">✖</button>
+                </div>
+                <div class="filter-section">
+                    <label>Recipe Type:</label><br>
+                    <label for="veg">Vegetarian</label>
+                    <input type="checkbox" id="veg" name="veg"><br>
+                    <label for="nonveg">Non-Vegetarian</label>
+                    <input type="checkbox" id="nonveg" name="nonveg">
+                </div>
+                <div class="filter-section">
+                    <label>Meal Type:</label><br>
+                    <label for="breakfast">Breakfast</label>
+                    <input type="checkbox" id="breakfast" name="breakfast"><br>
+                    <label for="lunch">Lunch</label>
+                    <input type="checkbox" id="lunch" name="lunch"><br>
+                    <label for="dinner">Dinner</label>
+                    <input type="checkbox" id="dinner" name="dinner">
+                </div>
+                <div class="filter-section">
+                    <label>Meal Time:</label><br>
+                    <label for="10Mins">10Mins</label>
+                    <input type="checkbox" id="10Mins" name="10Mins"><br>
+                    <label for="15Mins">15Mins</label>
+                    <input type="checkbox" id="15Mins" name="15Mins"><br>
+                    <label for="Morethan15Mins">Morethan15Mins</label>
+                    <input type="checkbox" id="Morethan15Mins" name="Morethan15Mins">
+                </div>
+                <div class="filter-section" style="text-align: center; margin-top: 20px;">
+                    <button class="filter-btn" onclick="applyFilters()">Apply Filters</button>
+                </div>
             </div>
-            <div class="filter-section">
-                <label>Meal Type:</label><br>
-                <label for="breakfast">Breakfast</label>
-                <input type="checkbox" id="breakfast" name="breakfast"><br>
-                <label for="lunch">Lunch</label>
-                <input type="checkbox" id="lunch" name="lunch"><br>
-                <label for="dinner">Dinner</label>
-                <input type="checkbox" id="dinner" name="dinner">
-            </div>
-            <div class="filter-section">
-                <label>Meal Time:</label><br>
-                <label for="10Mins">10Mins</label>
-                <input type="checkbox" id="10Mins" name="10Mins"><br>
-                <label for="15Mins">15Mins</label>
-                <input type="checkbox" id="15Mins" name="15Mins"><br>
-                <label for="Morethan15Mins">Morethan15Mins</label>
-                <input type="checkbox" id="Morethan15Mins" name="Morethan15Mins">
-            </div>
-            <div class="filter-section" style="text-align: center; margin-top: 20px;">
-                <button class="filter-btn" onclick="applyFilters()">Apply Filters</button>
-            </div>
+            
         </div>
-        <div class="recipes" id="recipesList">
-            <div class="recipe-item" data-category="veg breakfast 10Mins">
-                <img src="./foodimage/idly.png" alt="Idly">
-                <a href="idly">Idly</a>
-            </div>
-            <div class="recipe-item" data-category="veg breakfast 10Mins">
-                <img src="./foodimage/dosa.png" alt="Dosa">
-                <a href="dosa">Dosa</a>
-            </div>
-            <div class="recipe-item" data-category="veg breakfast 10Mins">
-                <img src="./foodimage/upma.jpg" alt="Upma">
-                <a href="upma">Upma</a>
-            </div>
-            <div class="recipe-item" data-category="veg breakfast 10Mins">
-                <img src="./foodimage/poha.jpg" alt="Poha">
-                <a href="poha">Poha</a>
-            </div>
-            <div class="recipe-item" data-category="veg breakfast 15Mins">
-                <img src="./foodimage/AlooParatha.jpg" alt="AlooParatha">
-                <a href="alooParatha.html">AlooParatha</a>
-            </div>
-            <div class="recipe-item" data-category="veg lunch Morethan15Mins">
-                <img src="./foodimage/besanchilla.jpg" alt="Besanchilla">
-                <a href="besanchilla">Besanchilla</a>
-            </div>
-            <div class="recipe-item" data-category="nonveg lunch Morethan15Mins">
-                <img src="./foodimage/Chicken65.jpg" alt="Chicken65">
-                <a href="chicken65">Chicken65</a>
-            </div>
-            <div class="recipe-item" data-category="nonveg lunch Morethan15Mins">
-                <img src="./foodimage/chickencurrey.jpg" alt="Chickencurrey">
-                <a href="chickencurrey">Chickencurrey</a>
-            </div>
-            <div class="recipe-item" data-category="veg lunch Morethan15Mins">
-                <img src="./foodimage/MethiThepla.jpg" alt="MethiThepla">
-                <a href="methiThepla">MethiThepla</a>
-            </div>
-            <div class="recipe-item" data-category="veg breakfast Morethan15Mins">
-                <img src="./foodimage/MisalPav.jpg" alt="MisalPav">
-                <a href="misalPav">MisalPav</a>
-            </div>
-            <div class="recipe-item" data-category="nonveg lunch Morethan15Mins">
-                <img src="./foodimage/muttoncurrey.jpg" alt="Muttoncurrey">
-                <a href="muttoncurrey">Muttoncurrey</a>
-            </div>
-            <div class="recipe-item" data-category="veg lunch Morethan15Mins">
-                <img src="./foodimage/onionpakora.jpg" alt="Onionpakora">
-                <a href="onionpakora">Onionpakora</a>
-            </div>
-            <div class="recipe-item" data-category="veg lunch Morethan15Mins">
-                <img src="./foodimage/paneerbuttermasala.jpg" alt="Paneerbuttermasala">
-                <a href="paneerbuttermasala">Paneerbuttermasala</a>
-            </div>
-            <div class="recipe-item" data-category="veg breakfast Morethan15Mins">
-                <img src="./foodimage/pongal.jpg" alt="Pongal">
-                <a href="pongal">Pongal</a>
-            </div>
-            <div class="recipe-item" data-category="veg lunch Morethan15Mins">
-                <img src="./foodimage/sambar.jpg" alt="Sambar">
-                <a href="sambar">Sambar</a>
-            </div>
-            <div class="recipe-item" data-category="veg lunch Morethan15Mins">
-                <img src="./foodimage/Samosa.jpg" alt="Samosa">
-                <a href="samosa">Samosa</a>
-            </div>
-            <div class="recipe-item" data-category="veg lunch Morethan15Mins">
-                <img src="./foodimage/TandooriPaneerTikka.jpg" alt="TandooriPaneerTikka">
-                <a href="tandooriPaneerTikka">TandooriPaneerTikka</a>
-            </div>
-        </div>
+        
 
         <script>
             function toggleFilter() {
